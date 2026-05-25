@@ -104,6 +104,38 @@
       pointer-events: none;
     }
 
+    .ivory-topbar {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 12px;
+      padding-top: 22px;
+      margin-bottom: -34px;
+    }
+
+    .ivory-contact-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.84);
+      border: 1px solid rgba(185, 139, 56, 0.24);
+      color: var(--deep);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 800;
+      box-shadow: 0 12px 30px rgba(47, 42, 36, 0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .ivory-contact-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 35px rgba(47, 42, 36, 0.12);
+    }
+
     .ivory-hero-grid {
       display: grid;
       grid-template-columns: 1.03fr 0.97fr;
@@ -532,6 +564,17 @@
     }
 
     @media (max-width: 640px) {
+      .ivory-topbar {
+        justify-content: center;
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 20px;
+      }
+
+      .ivory-contact-pill {
+        justify-content: center;
+      }
+
       .ivory-hero {
         padding: 62px 0 44px;
       }
@@ -568,11 +611,15 @@
   </style>
 
   <div class="ivory-hero">
+    <div class="ivory-container ivory-topbar">
+      <a class="ivory-contact-pill" href="tel:4072058938">Call 407-205-8938</a>
+      <a class="ivory-contact-pill" href="mailto:concierge.ivoryroomflorida@gmail.com">Contact Us</a>
+    </div>
     <div class="ivory-container ivory-hero-grid">
       <div>
         <span class="ivory-kicker">Affordable Luxury Event Space</span>
-        <h1>A beautiful private venue for summer parties, wedding receptions, and milestone celebrations.</h1>
-        <p>Host your summer party, intimate wedding reception, anniversary, birthday, family gathering, or milestone celebration in a private event space that feels elegant, flexible, and easy to style.</p>
+        <h1>A Beautiful Private Venue for Summer Parties, Wedding Receptions, and Milestone Celebrations.</h1>
+        <p>Host a polished summer party, intimate wedding reception, workshop, anniversary, birthday, or milestone celebration in an affordable luxury event space that feels elegant, flexible, and easy to style.</p>
         <div class="ivory-btn-row">
           <a class="ivory-btn ivory-btn-primary" href="https://www.peerspace.com/pages/listings/647045b37672b6000e70ac0d?utm_source=copy_link&utm_campaign=listing_sharing" target="_blank" rel="noopener">Book Now on Peerspace</a>
           <a class="ivory-btn ivory-btn-secondary" href="https://calendly.com/glenn-lubin-goosehead/ivoryroomvenuetour" target="_blank" rel="noopener">Book a Tour</a>
@@ -584,7 +631,7 @@
         <div class="ivory-photo-main"></div>
         <div class="ivory-floating-card">
           <strong>The Ivory Room</strong>
-          <span>A beautiful blank canvas for stylish summer parties, intimate wedding receptions, and milestone celebrations in Altamonte Springs, Florida.</span>
+          <span>An elegant blank canvas for summer parties, intimate receptions, workshops, and milestone celebrations in Altamonte Springs, Florida.</span>
         </div>
       </div>
     </div>
@@ -595,7 +642,7 @@
       <div class="ivory-section-header center">
         <span class="ivory-kicker">What You Can Host</span>
         <h2>A polished space for the moments worth celebrating.</h2>
-        <p>From relaxed summer parties to intimate wedding receptions and meaningful milestone events, The Ivory Room gives you the flexibility to bring your vision to life without losing the upscale feel.</p>
+        <p>From relaxed summer parties and intimate wedding receptions to workshops and meaningful milestone events, The Ivory Room gives you the flexibility to bring your vision to life with an upscale, family friendly feel.</p>
       </div>
 
       <div class="ivory-event-grid">
@@ -616,8 +663,8 @@
         </div>
         <div class="ivory-event-card">
           <div class="ivory-icon">◌</div>
-          <h3>Showers and Gatherings</h3>
-          <p>A warm and flexible setting for bridal showers, baby showers, content days, and private social events.</p>
+          <h3>Workshops and Mixers</h3>
+          <p>A polished setting for business workshops, networking events, creative sessions, and private social gatherings.</p>
         </div>
       </div>
     </div>
@@ -635,13 +682,14 @@
         <div class="ivory-package-card featured">
           <span class="ivory-badge">Instant Book</span>
           <h3>Hourly Venue Rental</h3>
-          <p>Best for summer parties, intimate wedding receptions, milestone celebrations, showers, and private gatherings.</p>
+          <p>Best for summer parties, intimate wedding receptions, workshops, milestone celebrations, and private gatherings.</p>
           <div class="ivory-price">$50–$75/hr</div>
           <span class="ivory-price-note">Official Peerspace pricing range</span>
           <ul>
             <li>2 hour minimum booking</li>
             <li>Up to 60 guests</li>
             <li>600 square foot event space</li>
+            <li>Great for parties, receptions, workshops, and celebrations</li>
             <li>Instant booking available through Peerspace</li>
           </ul>
           <a class="ivory-btn ivory-btn-primary" href="https://www.peerspace.com/pages/listings/647045b37672b6000e70ac0d?utm_source=copy_link&utm_campaign=listing_sharing" target="_blank" rel="noopener">Book Now on Peerspace</a>
@@ -664,13 +712,13 @@
 
         <div class="ivory-package-card">
           <span class="ivory-badge">Add On</span>
-          <h3>Speaker Upgrade</h3>
-          <p>Add sound support for speeches, music, games, announcements, or a simple party playlist.</p>
+          <h3>Two Speaker Upgrades</h3>
+          <p>Add sound support for speeches, music, games, announcements, workshops, or a simple party playlist.</p>
           <div class="ivory-price">$25</div>
-          <span class="ivory-price-note">JBL 6 Speaker flat fee</span>
+          <span class="ivory-price-note">Two JBL 6 speaker upgrades, flat fee</span>
           <ul>
-            <li>Good for casual music</li>
-            <li>Helpful for hosted activities</li>
+            <li>Good for casual music and announcements</li>
+            <li>Helpful for hosted activities and workshops</li>
             <li>Available as a Peerspace add on</li>
             <li>Can be added at checkout</li>
           </ul>
@@ -684,10 +732,10 @@
           <div class="ivory-price">From $4</div>
           <span class="ivory-price-note">Add ons available at checkout</span>
           <ul>
-            <li>Folding chairs from $4/item</li>
-            <li>Cocktail table with linen $20/item</li>
+            <li>Folding chairs $2/item</li>
+            <li>Six-foot tables with linen $20/item</li>
             <li>Delivery flat fee $25</li>
-            <li>360 Photo Booth and Pop-up Café options available</li>
+            <li>360 booth, Pop-up Café, and roving caviar options available</li>
           </ul>
           <a class="ivory-btn ivory-btn-secondary" href="https://www.peerspace.com/pages/listings/647045b37672b6000e70ac0d?utm_source=copy_link&utm_campaign=listing_sharing" target="_blank" rel="noopener">View Add Ons</a>
         </div>
@@ -700,20 +748,20 @@
       <div class="ivory-section-header center">
         <span class="ivory-kicker">Peerspace Add Ons</span>
         <h2>Add the details that make your celebration feel complete.</h2>
-        <p>These optional add ons are listed on Peerspace and can help guests customize the celebration during checkout.</p>
+        <p>Customize the experience with premium event upgrades, including the new roving caviar option Glenn wants to highlight for a more elevated guest experience.</p>
       </div>
 
       <div class="ivory-addon-grid">
-        <div class="ivory-addon-card"><strong>JBL 6 Speaker</strong><p>$25 flat fee</p></div>
+        <div class="ivory-addon-card"><strong>Two JBL 6 Speakers</strong><p>$25 flat fee</p></div>
+        <div class="ivory-addon-card"><strong>Roving Caviar</strong><p>Premium guest experience</p></div>
+        <div class="ivory-addon-card"><strong>360 Booth</strong><p>$325/item</p></div>
         <div class="ivory-addon-card"><strong>Pop-up Café</strong><p>$300/item</p></div>
-        <div class="ivory-addon-card"><strong>Folding Chair</strong><p>$4/item</p></div>
-        <div class="ivory-addon-card"><strong>Cocktail Table</strong><p>$20/item with linen</p></div>
+        <div class="ivory-addon-card"><strong>Folding Chairs</strong><p>$2/item</p></div>
+        <div class="ivory-addon-card"><strong>Six-foot Tables</strong><p>$20/item with linen</p></div>
         <div class="ivory-addon-card"><strong>Delivery</strong><p>$25 flat fee</p></div>
-        <div class="ivory-addon-card"><strong>360 Photo Booth</strong><p>$325/item</p></div>
-        <div class="ivory-addon-card"><strong>Instant Book</strong><p>Book through Peerspace</p></div>
+        <div class="ivory-addon-card"><strong>Workshop Layout</strong><p>Great for hosted sessions</p></div>
+        <div class="ivory-addon-card"><strong>Instant Book</strong><p>Reserve through Peerspace</p></div>
         <div class="ivory-addon-card"><strong>8+ Hour Discount</strong><p>15% off</p></div>
-        <div class="ivory-addon-card"><strong>2 Hour Minimum</strong><p>Easy short bookings</p></div>
-        <div class="ivory-addon-card"><strong>Up to 60 Guests</strong><p>Great for gatherings</p></div>
       </div>
     </div>
   </section>
@@ -722,7 +770,7 @@
     <div class="ivory-container">
       <div class="ivory-section-header center">
         <span class="ivory-kicker">How It Works</span>
-        <h2>A smooth, simple process from inquiry to celebration.</h2>
+        <h2>A smooth, simple process from booking to celebration.</h2>
       </div>
 
       <div class="ivory-steps-grid">
@@ -739,7 +787,7 @@
         <div class="ivory-step-card">
           <div class="ivory-step-number">3</div>
           <h3>Choose Add Ons</h3>
-          <p>Add items like speaker rental, chairs, cocktail tables, delivery, or photo booth options at checkout.</p>
+          <p>Add items like speaker upgrades, folding chairs, six-foot tables with linen, delivery, 360 booth, pop-up café, or roving caviar at checkout or upon request.</p>
         </div>
         <div class="ivory-step-card">
           <div class="ivory-step-number">4</div>
@@ -786,7 +834,7 @@
       <div class="ivory-urgency">
         <div>
           <h2>Summer and celebration dates are filling quickly.</h2>
-          <p>Summer parties, intimate wedding receptions, milestone celebrations, showers, and family gatherings are popular during the season. Secure your preferred date early for the best availability.</p>
+          <p>Summer parties, intimate wedding receptions, workshops, and milestone celebrations are popular during the season. Secure your preferred date early for the best availability.</p>
         </div>
         <div class="ivory-btn-row">
           <a class="ivory-btn ivory-btn-primary" href="https://www.peerspace.com/pages/listings/647045b37672b6000e70ac0d?utm_source=copy_link&utm_campaign=listing_sharing" target="_blank" rel="noopener">See Available Dates on Peerspace</a>
